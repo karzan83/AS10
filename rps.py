@@ -27,4 +27,9 @@ elif user_action == "scissors":
     if ai_action == "paper":
         print("Scissors cuts paper! You win!")
     else:
-        print("Rock smashes scissors! You lose.")
+        print("Rock smashes scissors! You lose."
+                )
+        play_again = input("Do you want to play again? (yes/no): ").lower()
+    if play_again != "yes":
+        print("Thanks for playing!")
+        break
